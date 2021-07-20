@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Koogle</title>
+<link rel="stylesheet" href="koogle_2.css">
+<style type= "text/css">
+h1{text-align:center; margin-top: 60px;}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul id="nav_bar">
+            <li class="nav-links" id="gmail"><a href=" https://mail.google.com/mail/u/0/#inbox">
+  Gmail</a></li>
+            <li class="nav-links"><a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a></li>
+            <li id="sign_in"><a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app">Sign In</a></li>
+          </ul>  
+        </nav>  
+        </header>
+        
+    <div class="button2"></div>
+<button class="searchBtn3"><img src="youtube_6.png"> YouTube</button>
+<button class="searchBtn4"><img src="facebook_8.jpg"> Facebook</button>
+<button class="searchBtn5"><img src="amazon_4.png"> Amazon</button>
+<button class="searchBtn6"><img src="hotstar_6.jpg"> Hotstar</button>
+<button class="searchBtn7"><img src="insta4.jpg"> Instagram</button>
+<button class="searchBtn8"><img src="tele4.png"> Telegram</button>
+<button class="searchBtn9"><img src="sn3.jpg"> Snapchat</button>
+<button class="searchBtn10"><img src="pg3.jpg"> Play Store</button>
+</div>
+<h1><span style="color:#ff6702; font-family: Edwardian Script ITC; font-size: 4cm; text-shadow: 4px 4px yellow">K</span><span style="color:#00ffc3; font-family: Old English Text MT; font-size: 3cm; text-shadow: 4px 4px blue">o</span><span style="color:#1eff00; font-family:Old English Text MT ; font-size: 3cm; text-shadow: 4px 4px green">o</span><span style="color:#ff6702; font-family: Lucida Calligraphy; font-size: 2.5cm; text-shadow: 2px 4px yellow">g</span><span style="color:#ff89fb; font-family: monotype corsiva; font-size: 4cm; text-shadow: 4px 4px purple">l</span><span style="color:#ff00cc; font-family: Lucida fax; font-size: 3cm; text-shadow: 4px 4px purple">e</span>
+<center>
+<section>
+<div class="searchBx">
+<input type="text" name="" class="query" value="">
+<div class="icons">
+    <div><img src="sc_2.png"width=20 height=20></div>
+    <div><img src="mic_05.png"width=15 height=20></div>
+     </div>
+<div class="button">
+    <button class="searchBtn">Koogle Search</button>
+    <button class="searchBtn2">Koogle Info</button>
+    </div>
+</div>
+</section>
+<script>
+    let query = document.querySelector('.query')
+    let searchBtn = document.querySelector('.searchBtn')
+    let searchBtn2 = document.querySelector('.searchBtn2')
+    let searchBtn3 = document.querySelector('.searchBtn3')
+    let searchBtn4 = document.querySelector('.searchBtn4')
+    let searchBtn5 = document.querySelector('.searchBtn5')
+    let searchBtn6 = document.querySelector('.searchBtn6')
+    let searchBtn7 = document.querySelector('.searchBtn7')
+    let searchBtn8 = document.querySelector('.searchBtn8')
+    let searchBtn9 = document.querySelector('.searchBtn9')
+    let searchBtn10 = document.querySelector('.searchBtn10')
+    searchBtn.onclick = function(){
+        let url = 'https://www.google.com/search?q='+query.value;
+        window.open(url, '_self');
+        
+    }
+    searchBtn2.onclick = function(){
+        let url = 'info.html'+query.value;
+        window.open(url, '_self');
+        
+    }
+    searchBtn3.onclick = function(){
+        let url = 'https://www.youtube.com/'+query.value;
+        window.open(url, '_self');
+    }
+    
+    searchBtn4.onclick = function(){
+        let url = 'https://www.facebook.com/'+query.value;
+        window.open(url, '_self');
+    }
+
+    searchBtn5.onclick = function(){
+        let url = 'https://www.amazon.in/?&_encoding=UTF8&tag=vped1a-21&linkCode=ur2&linkId=1f94e7c2bbe0c476c1d418adb3a69d74&camp=3638&creative=24630'+query.value;
+        window.open(url, '_self');
+    }
+
+    searchBtn6.onclick = function(){
+        let url = 'https://www.hotstar.com/in'+query.value;
+        window.open(url, '_self');
+    }
+    searchBtn7.onclick = function(){
+        let url = 'https://www.instagram.com/'+query.value;
+        window.open(url, '_self');
+    }
+    searchBtn8.onclick = function(){
+        let url = 'https://telegram.org/'+query.value;
+        window.open(url, '_self');
+    }
+    searchBtn9.onclick = function(){
+        let url = 'https://www.snapchat.com/'+query.value;
+        window.open(url, '_self');
+    }
+    searchBtn10.onclick = function(){
+        let url = 'https://play.google.com/store'+query.value;
+        window.open(url, '_self');
+    }
+    </script>
+</center>
+</body>
+</html>
